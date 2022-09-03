@@ -1,0 +1,81 @@
+:root {
+    --white1: #DAE0E6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white1);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    background-color: white;
+
+    height: 50px;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 12px 15px;
+    font-size: 23px;
+}
+
+#gitlogo {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 50%;
+    background-color: pink;
+}
+
+#search-box {
+    min-width: 100px;
+    max-width: 400px;
+    width: 50%;
+    background: url(../img/lupa.png) no-repeat;
+    background-size: 20px;
+    background-position: 2.5px;
+    height: 25px;
+    padding-left: 25px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+main {
+    margin: 75px auto 0 auto;
+    max-width: 800px;
+}
+
+.post {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.post:hover {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.post h1 {
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+.post-author {
+    min-height: 32px;
+    padding: 5px 0;
+}
+
+.profile-img-small {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    vertical-align: middle;
+}

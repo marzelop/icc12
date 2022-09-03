@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/post_page.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html" class="no-dec">
+            <img id="gitlogo" src="img/gitlogo.png" alt="Logo Github">
+            <h1>her-code.com</h1>
+        </a>
+        <label for="search"><input id="search-box" type="text" placeholder="Buscar"></label>
+    </header>
+    <main>
+        <h1>IA que automatiza o jogo Snake</h1>
+        <p>Eu recriei o famoso jogo da cobrinha utilizando python e fiz uma inteligência artificial com uma rede neural artificial para jogar. A minha IA foi capaz de cobrir toda a tela do jogo, conseguindo pontuação máxima! O repositório está disponível no GitHub para caso você queira olhar ou testar.</p>
+        <img src="img/perfect_snake.jpg" alt="imagem do jogo snake" style="display: block; margin: 10px auto;">
+        <h2>Rede Neural</h2>
+        <p>O modelo de inteligência artificial utilizado foi uma rede neural artificial que recebe 8 parâmetros e tem 4 saídas binárias, sendo essas:</p>
+
+        <h3>Entradas:</h3>
+        <ul>
+            <li>Distância do obstáculo mais próximo acima da cabeça do jogador</li>
+            <li>Distância do obstáculo mais próximo à direita da cabeça do jogador</li>
+            <li>Distância do obstáculo mais próximo à esquerda da cabeça do jogador</li>
+            <li>Distância do obstáculo mais próximo abaixo da cabeça do jogador</li>
+            <li>Posição da cabeça no eixo x</li>
+            <li>Posição da cabeça no eixo y</li>
+            <li>Posição do alimento no eixo x</li>
+            <li>Posição do alimento no eixo y</li>
+        </ul>
+
+        <h3>Saídas:</h3>
+        <ul>
+            <li>Cima</li>
+            <li>Baixo</li>
+            <li>Direita</li>
+            <li>Esquerda</li>
+        </ul>
+        <p>As saídas indicam a direção na qual a cobra irá se mover.</p>
+        <p>Dessa forma, a rede neural possui 8 neurônios na camada de entrada e 4 na de saída, além de possuir 2 camadas escondidas com 3 neurônios cada, que fui alterando de forma empírica.</p>
+
+        <h2>Python</h2>
+        <p>A escolha da linguagem Python foi feita por causa da velocidade de desenvolvimento que a linguagem proporciona e também pela disponibilidade de bibliotecas para IA da linguagem.</p>
+
+        <h2>Conclusão</h2>
+        <p>Com isso, após cerca de 100 gerações treinando a IA, o modelo conseguiu alcançar a pontuação máxima do jogo, ou seja, cobriu toda a tela! Se você mesmo quiser treinar e ver a IA jogar, você pode clonar o repositório e seguir as instruções disponíveis no GitHub.</p>
+
+        <section id="comments">
+            <h2>Comentários</h2>
+            <div id="new-comment">
+                <img class="profile-img-small" src="img/default_user.png" alt="foto de usuário padrão">
+                <div contenteditable="true" id="comment-area" placeholder="Novo comentário..."></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

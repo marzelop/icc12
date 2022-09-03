@@ -6,21 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/pag_principal.css">
+    <script src="scripts/share.js"></script>
+    <script src="scripts/feedback.js"></script>
 </head>
 <body>
     <header>
-        <img id="gitlogo" src="img/gitlogo.png" alt="Logo Github">
-        <h1>github 2</h1>
+        <a href="./index.html" class="no-dec">
+            <img id="gitlogo" src="img/gitlogo.png" alt="Logo Github">
+            <h1>github 2</h1>
+        </a>
         <label for="search"><input id="search-box" type="text" placeholder="Buscar"></label>
     </header>
     <main>
         <div class="post">
-            <h1>AI que automatiza o jogo Snake</h1>
-            <div class="post-author" onclick="location.href='./fs22'">
-                <img class="profile-img-small" src="img/pessoa1.jpeg" alt="foto de perfil">
-                <span class="author-name">por Fulana da Silva</span>
+            <a href="./post1.html" class="no-dec" id="post1-anchor">
+                <h1>IA que automatiza o jogo Snake</h1>
+                <div class="post-author" onclick="location.href='./fs22'">
+                    <img class="profile-img-small" src="img/pessoa1.jpeg" alt="foto de perfil">
+                    <span class="author-name">por Fulana da Silva</span>
+                </div>
+                <p>Eu recriei o famoso jogo da cobrinha utilizando python e fiz uma inteligência artificial com uma rede neural artificial para jogar. A minha IA foi capaz de cobrir toda a tela do jogo, conseguindo pontuação máxima! O repositório está disponível no GitHub para caso você queira olhar ou testar.</p>
+                <img class="post-img" src="img/perfect_snake.jpg" alt="jogo snake perfeito">
+            </a>
+            <div class="post-buttons-container">
+                <button class="uparrow" onclick="upvote();"></button>
+                <span>327</span>
+                <button class="uparrow downarrow" onclick="downvote();"></button>
+                <button class="share-btn" onclick="share('post1-anchor');">Compartilhar</button>
+                <button class="clone-btn" onclick="alert('Finge que clonou o repositório.')">Clonar</button>
+                <button class="save-btn" onclick="alert('Finge que o post está numa lista de posts que você salvou.')">Salvar</button>
             </div>
-            <p>Eu recriei o famoso jogo da cobrinha utilizando python e fiz uma inteligência artificial com uma rede neural artificial para jogar. A minha IA foi capaz de cobrir toda a tela do jogo, conseguindo pontuação máxima! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam corrupti alias animi blanditiis impedit! Dicta nam, labore expedita ipsum atque est praesentium harum quia. Sit explicabo facilis repellendus laudantium sed? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt explicabo consequuntur quo iste ipsa. Repudiandae adipisci ducimus, impedit eligendi id deleniti nisi rerum sunt, neque sequi aut amet vel error.</p>
+        </div>
+            
+        <div class="post">
+            <a href="./post2.html" class="no-dec" id="post2-anchor">
+                <h1>Extensão do Chrome para reconhecimento de texto em imagens no navegador</h1>
+                <a href="./pag_pessoa1.html" class="no-dec">    
+                    <div class="post-author" onclick="location.href='./cs22'">
+                        <img class="profile-img-small" src="img/pessoa2.jpeg" alt="foto de perfil">
+                        <span class="author-name">por Ciclana Santos</span>
+                    </div>
+                </a>
+                <p>Nessa extensão eu desenvolvi um sistema de reconhecimento de texto em imagens do navegador. Utilizando a extensão é possível copiar e colar texto diretamente de uma imagem, sem ter que transcrever o conteúdo.</p>
+            </a>
+            <div class="post-buttons-container">
+                <button class="uparrow" onclick="upvote();"></button>
+                <span>25</span>
+                <button class="uparrow downarrow" onclick="downvote();"></button>
+                <button class="share-btn" onclick="share('post2-anchor');">Compartilhar</button>
+                <button class="clone-btn" onclick="alert('Finge que clonou o repositório.')">Clonar</button>
+                <button class="save-btn" onclick="alert('Finge que o post está numa lista de posts que você salvou.')">Salvar</button>
+            </div>
         </div>
     </main>
 </body>

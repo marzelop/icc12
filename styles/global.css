@@ -14,15 +14,15 @@
 }
 
 :root {
-    --white1: #DAE0E6;
     --white2: #f9f9f9;
     --cor1: #5C6BC0;
+    --cor2: #b68fff;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--white1);
+    background-color: var(--cor2);
 }
 
 header {

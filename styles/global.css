@@ -141,3 +141,8 @@ button:hover {
 .downarrow {
     transform: scaleY(-1);
 }
+
+#login-container {
+    margin-right: 20px;
+    float: right;
+}

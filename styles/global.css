@@ -42,12 +42,10 @@ header h1 {
     font-size: 23px;
 }
 
-#gitlogo {
-    margin: 5px;
-    width: 40px;
+#gither-logo {
     height: 40px;
+    margin: 5px;
     float: left;
-    border-radius: 50%;
 }
 
 #search-box {
@@ -62,6 +60,8 @@ header h1 {
     padding-left: 25px;
     border-radius: 10px;
     border: 1px solid gray;
+    margin-top: 12px;
+    margin-left: 10px;
 }
 
 main {

@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
 .post {
     background-color: white;

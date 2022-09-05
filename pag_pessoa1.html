@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/post.css">
+    <link rel="stylesheet" href="styles/personal_page.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html" class="no-dec">
+            <img id="gitlogo" src="img/gitlogo.png" alt="Logo Github">
+            <h1>her-code.com</h1>
+        </a>
+        <label for="search"><input id="search-box" type="text" placeholder="Buscar"></label>
+        <div id="login-container">
+            <button id="login-btn" onclick="alert('Contas é um recurso que não foi implementado!')">Entrar</button>
+            <img src="img/default_user.png" alt="ícone de usuário padrão" class="profile-img-small">
+        </div>
+    </header>
+    <main>
+        <img class="profile-img-medium" src="img/pessoa1.jpeg" alt="foto de perfil de Fulana da Silva">
+        <h1 class="username-verybig">Fulana da Silva</h1><br>
+
+        <h2>Biografia</h2>
+        <p>Sempre fui muito apaixonada em tecnologia e quando descobri o machine learning descobri a área que eu iria atuar! Ver o progresso de um algoritmo enquanto ele se desenvolve e fica cada vez mais robusto é fascinante, é como ver a seleção natural atuando, porém dentro do seu computador e muito mais rápido.</p>
+        <p>Meus primeiros projetos foram com classificação de imagens, se na foto há um cachorro ou um gato, o hello world do machine learning. Depois disso, comecei a recriar alguns jogos que eu gostava e treinar uma IA para jogar. Inclusive há um post aqui na plataforma que eu falo um pouco sobre a criação de uma IA para jogar o jogo Snake, o jogo da cobrinha, é só procurar aqui no meu perfil!</p>
+
+        <h2>Posts</h2>
+        <div class="post">
+            <a href="./post1.html" class="no-dec" id="post1-anchor">
+                <h1>IA que automatiza o jogo Snake</h1>
+                <a href="./pag_pessoa1.html" class="no-dec">
+                    <div class="post-author" onclick="location.href='./fs22'">
+                        <img class="profile-img-small" src="img/pessoa1.jpeg" alt="foto de perfil">
+                        <span class="author-name">por Fulana da Silva</span>
+                    </div>
+                </a>
+                <p>Eu recriei o famoso jogo da cobrinha utilizando python e fiz uma inteligência artificial com uma rede neural artificial para jogar. A minha IA foi capaz de cobrir toda a tela do jogo, conseguindo pontuação máxima! O repositório está disponível no GitHub para caso você queira olhar ou testar.</p>
+                <img class="post-img" src="img/perfect_snake.jpg" alt="jogo snake perfeito">
+            </a>
+            <div class="post-buttons-container">
+                <button class="uparrow" onclick="upvote();"></button>
+                <span>327</span>
+                <button class="uparrow downarrow" onclick="downvote();"></button>
+                <button class="share-btn" onclick="share('post1-anchor');">Compartilhar</button>
+                <button class="clone-btn" onclick="alert('Finge que clonou o repositório.')">Clonar</button>
+                <button class="save-btn" onclick="alert('Finge que o post está numa lista de posts que você salvou.')">Salvar</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

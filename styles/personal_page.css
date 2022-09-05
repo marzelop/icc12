@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+main {
+    max-width: 800px;
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.profile-img-medium {
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
+    border: 3px solid var(--cor1);
+    float: left;
+}
+
+.username-verybig {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: +16px;
+}

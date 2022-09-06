@@ -145,3 +145,17 @@ button:hover {
     margin-right: 20px;
     float: right;
 }
+
+.tags {
+    display: flex;
+    column-gap: 10px;
+}
+
+.tag {
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(137, 55, 204);
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}

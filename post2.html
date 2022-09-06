@@ -22,6 +22,12 @@
     </header>
     <main>
         <h1>Extensão do Chrome para reconhecimento de texto em imagens no navegador</h1>
+        <a href="./pag_pessoa1.html" class="no-dec">
+            <div class="post-author">
+                <img class="profile-img-small" src="img/pessoa1.jpeg" alt="foto de perfil">
+                <span class="author-name">por Fulana da Silva</span>
+            </div>
+        </a>
         <p>Eu desenvolvi uma extensão do Chrome que permite copiar e colar textos diretamente de uma imagem no navegador. Utilizei a linguagem Python para criar o código de extração de texto e JavaScript para integrar esse código numa extensão de navegador, além da própria API do Google Chrome.</p>
         <p>Para utilizar a extensão é só baixar a extensão na <a href="./linkwarn.html">Chrome Web Store</a> ou clonar o repositório no <a href="./linkwarn.html">GitHub</a>.</p>
 
@@ -31,6 +37,14 @@
         <h2>Tecnologias</h2>
         <p>Foi utilizada a linguagem Python para o código de extração de texto por causa da sua grande disponibilidade de bibliotecas e agilidade no desenvolvimento, já que existem funções para a detecção e transcrição de texto prontas dentro das bibliotecas da linguagem.</p>
         <p>Já a escolha do JavaScript foi por conta da sua compatibilidade nativa com os navegadores e também a integração com a API disponibilizada pela desenvolvedora do navegador.</p>
+
+        <div class="post-buttons-container">
+            <button class="uparrow" onclick="upvote();"></button>
+            <span>327</span>
+            <button class="uparrow downarrow" onclick="downvote();"></button>
+            <button class="clone-btn" onclick="alert('Finge que clonou o repositório.')">Clonar</button>
+            <button class="save-btn" onclick="alert('Finge que o post está numa lista de posts que você salvou.')">Salvar</button>
+        </div>
 
         <section id="comments">
             <h2>Comentários</h2>
